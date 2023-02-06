@@ -1,5 +1,3 @@
-```
-
 # dumpling-robot
 
 Holonomic robot on the RPi w/ ROS Melodic. 
@@ -43,4 +41,3 @@ Holonomic robot on the RPi w/ ROS Melodic.
 - [raspicam_node](https://github.com/UbiquityRobotics/raspicam_node)
 - [joy](http://wiki.ros.org/joy)
 - [How to Use Mecanum Wheels in 200 Seconds](https://www.youtube.com/watch?v=gnSW2QpkGXQ)
-```
