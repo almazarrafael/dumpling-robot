@@ -2,11 +2,9 @@
 
 Holonomic robot on the RPi w/ ROS Melodic. 
 
-![dumpling](./media/dumpling.jpg)
-
 | dumpling | dumpling Top View |
 |:--------:|:-----------------:|
-|![dumpling](./media/dumpling.jpg)|![dumpling_top](dumpling_top.jpg)|
+|![dumpling](./media/dumpling.jpg)|![dumpling_top](./media/dumpling_top.jpg)|
 
 ### Parts List
 
