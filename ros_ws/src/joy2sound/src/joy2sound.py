@@ -1,9 +1,17 @@
+#!/usr/bin/python3
+
 import rospy
 from sensor_msgs.msg import Joy
 
 from playsound import playsound
 
+from pathlib import Path
+
+SCRIPT_DIR = Path(__file__).parent
+
 buttons = None
+
+path = "~/dumpling-robot/ros_ws/src/joy2sound/src"
 
 def callback(data):
     global buttons
@@ -20,15 +28,16 @@ def listener():
         if buttons == None:
             pass
         elif buttons[0] == 1:
-            playsound("./sounds/honk.mp3")
+            playsound(SCRIPT_DIR / 'sounds/honk.mp3')
         elif buttons[1] == 1:
-            playsound("./sounds/fart.mp3")
-        elif buttons[2] == 1:
-            playsound("./sounds/drive_toggle.wav")
+            playsound(SCRIPT_DIR / "sounds/fart.mp3")
+        elif buttons[2] == 1 or buttons[4] == 1:
+            playsound(SCRIPT_DIR / "sounds/drive_toggle.wav")
         elif buttons[3] == 1:
-            playsound("./sounds/fortnite_death.mp3")
+            playsound(SCRIPT_DIR / "sounds/fortnite_death.mp3")
         else:
             pass
+        rate.sleep()
 
     rospy.spin()
 

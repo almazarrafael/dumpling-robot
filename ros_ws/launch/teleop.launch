@@ -1,0 +1,5 @@
+<launch>
+	<node name="joy_node" pkg="joy" type="joy_node" output="screen"/>
+	<node name="joy2motor" pkg="joy2motor" type="joy2motor.py" output="screen"/>
+	<node name="joy2sound" pkg="joy2sound" type="joy2sound.py" output="screen"/>
+</launch>
