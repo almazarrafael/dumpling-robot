@@ -35,9 +35,11 @@ Holonomic robot on the RPi w/ ROS Noetic.
 - **joy2motor** - Subscribes to joy topic and controls the motors through the Adafruit motor hat library. Includes holonomic drive, tank drive and car drive.
 - **joy2sound** - Subscribes to joy topic and plays .wav and .mp3 files stored in the sounds directory.
 - **raspicam_node** - Publishes image topic and streams Raspberry Pi cam feed.
+- **robot_upstart** - Launches a launch file on boot.
 
 ### Resources
 
 - [raspicam_node](https://github.com/UbiquityRobotics/raspicam_node)
 - [joy](http://wiki.ros.org/joy)
 - [How to Use Mecanum Wheels in 200 Seconds](https://www.youtube.com/watch?v=gnSW2QpkGXQ)
+- [robot_upstart](http://wiki.ros.org/robot_upstart)
